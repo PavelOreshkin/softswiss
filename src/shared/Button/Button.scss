@@ -64,7 +64,7 @@
     @include responsive(tablet) {
       @include small-button;
     }
-    border-spacing: 2px;
+    border-width: 2px;
     border-style: solid;
     border-color: $primary-color;
     background: none;
