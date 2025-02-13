@@ -1,0 +1,43 @@
+@import "variables";
+
+.Banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 490px;
+  // background: $dark-color;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: $max-content;
+  }
+
+  &__content {
+    max-width: 690px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 72px;
+    &_highlight {
+      color: $secondary-color;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38.4px;
+    &_highlight {
+      color: $primary-color;
+    }
+  }
+}
+

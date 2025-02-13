@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin big-button {
+  width: 191px;
+  height: 54px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+@mixin small-button {
+  width: 161px;
+  height: 33px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.button {
+  color: $default-color;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &_default {
+    &:hover {
+      background: linear-gradient(98.25deg, #EBFF00 18.56%, #FF70D9 76.02%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &_primary {
+    color: $primary-color;
+    font-size: 20px;
+    @include responsive(tablet) {
+      font-size: 16px;
+    }
+    @include responsive(mobile) {
+      font-size: 14px;
+    }
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &_filled {
+    @include big-button;
+    @include responsive(mobile) {
+      @include small-button;
+    }
+    background: $primary-color;
+    color: $dark-color;
+    &:hover {
+      opacity: .6;
+    }
+  }
+
+  &_outlined {
+    @include big-button;
+    @include responsive(tablet) {
+      @include small-button;
+    }
+    border-spacing: 2px;
+    border-style: solid;
+    border-color: $primary-color;
+    background: none;
+    color: $primary-color;
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

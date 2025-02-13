@@ -1,0 +1,9 @@
+@import "normalize";
+@import "variables";
+@import "mixins";
+
+.App {
+  background: $gradient-bg;
+  font-family: 'Lato'; // пока не работает
+  color: $default-color;
+}
