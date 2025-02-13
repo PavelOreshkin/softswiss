@@ -18,16 +18,3 @@ export default function Button({
     </button>
   );
 }
-
-{
-  /* <Button>Home</Button>
-<Button type="filled" color="primary">
-  Learn more
-</Button>
-<Button type="outlined" color="primary">
-  Learn more 2
-</Button>
-<Button type="primary" color="primary">
-  Read more
-</Button> */
-}

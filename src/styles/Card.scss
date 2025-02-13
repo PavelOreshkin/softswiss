@@ -1,37 +1,58 @@
 @import "variables";
+@import "mixins";
 
 .Card {
-  // background: lightcoral;
-  // border: 1px solid red;
+  height: 350px;
   padding: 35px;
   border-radius: 10px;
   flex-grow: 1;
-
   background-size: cover;
   background-position: center;
-  
-
-  // &[data-bg] {
-  //   background-image: url(attr(data-bg url));
-  // }
+  display: flex;
+  flex-direction: column;
 
   &__background {
     position: absolute;
     height: 100%;
   }
 
-  &_big {
+  @include responsive(tablet) {
+    // flex-basis: 48%;
+    min-width: 40%;
+    justify-content: flex-end;
+  }
+
+  @include responsive(mobile) {
     width: 100%;
   }
 
+  // @include responsive(tablet) {
+  //   justify-content: flex-end;
+  //   border: 1px solid red;
+  // }
+
+  &_big {
+    width: 100%;
+    @include responsive(tablet) {
+      width: auto;
+    }
+  }
+
   &__content {
-    max-width: 420px;
+    max-width: 410px;
     display: flex;
     flex-direction: column;
     gap: 22px;
 
+    @include responsive(tablet) {
+      max-width: 200px;
+    }
+
     &_big {
       max-width: 635px;
+      @include responsive(tablet) {
+        max-width: 200px;
+      }
     }
   }
 
@@ -40,9 +61,18 @@
     font-size: 46px;
     line-height: 46px;
 
+    @include responsive(tablet) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
     &_big {
       font-size: 74px;
       line-height: 74px;
+      @include responsive(tablet) {
+        font-size: 40px;
+        line-height: 40px;
+      }
     }
   }
 
@@ -51,10 +81,18 @@
     font-size: 24px;
     line-height: 28.8px;
 
+    @include responsive(tablet) {
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+
     &_big {
-      font-weight: 800;
       font-size: 26px;
       line-height: 31.2px;
+      @include responsive(tablet) {
+        font-size: 16px;
+        line-height: 19.2px;
+      }
     }
   }
 }

@@ -18,7 +18,7 @@ export default function Banner() {
           <Button type="filled">Learn more</Button>
         </div>
 
-        <img src={earth} alt="earth" />
+        <img className="Banner__image" src={earth} alt="earth" />
       </div>
     </div>
   );

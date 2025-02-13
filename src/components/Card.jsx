@@ -10,7 +10,9 @@ export default function Card({ title, subtitle, isBig, backgroundImg }) {
   return (
     <div
       className={`Card ${cardBig}`}
-      style={{ backgroundImage: `url(${backgroundImg})` }}
+      style={{
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url(${backgroundImg})`,
+      }}
     >
       <div className={`Card__content ${contentBig}`}>
         <h2 className={`Card__title ${titleBig}`}>{title}</h2>

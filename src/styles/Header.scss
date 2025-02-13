@@ -2,6 +2,7 @@
 @import "mixins";
 
 .Header {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +15,68 @@
     align-items: center;
     width: 100%;
     max-width: $max-content;
+    margin: 0 30px;
   }
   &__logo {
     display: flex;
     gap: 5px;
   }
-  &__menu {
+}
+
+.menu {
+  display: flex;
+  gap: 54px;
+  cursor: pointer;
+
+  @include responsive(mobile) {
+    display: none;
+  }
+
+  // &__basket {
+  //   fill: red;
+  //   // fill="url(#gradient)"
+  //   &:hover {
+  //     border: 1px solid red;
+  //     fill: red;
+  //     color: green;
+
+  //     background: linear-gradient(98.25deg, #EBFF00 18.56%, #FF70D9 76.02%);
+  //     -webkit-background-clip: text;
+  //     -webkit-text-fill-color: transparent;
+  //   }
+  // }
+
+  &__burger {
+    display: none;
+    @include responsive(mobile) {
+      display: block;
+    }
+    &_opened {
+      display: none;
+    }
+  }
+
+  &__burger:hover ~ &_list {
     display: flex;
-    gap: 54px;
-    // justify-content: space-between;
+  }
+  &__burger:hover ~ &__burger_opened {
+    display: block;
+  }
+  
+  &_list:hover {
+    display: flex;
+  }
+  
+  &_list {
+    display: none;
+    position: absolute;
+    background: $gradient-bg;
+    top: 60px;
+    right: 0;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 }
 

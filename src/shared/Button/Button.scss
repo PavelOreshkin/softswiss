@@ -28,22 +28,8 @@
   &_default {
     &:hover {
       background: linear-gradient(98.25deg, #EBFF00 18.56%, #FF70D9 76.02%);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
-    }
-  }
-
-  &_primary {
-    color: $primary-color;
-    font-size: 20px;
-    @include responsive(tablet) {
-      font-size: 16px;
-    }
-    @include responsive(mobile) {
-      font-size: 14px;
-    }
-    &:hover {
-      opacity: .6;
     }
   }
 
