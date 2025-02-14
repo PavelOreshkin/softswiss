@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/softswiss/static/css/main.5dc20d17.css",
-    "main.js": "/softswiss/static/js/main.22aed009.js",
-    "static/media/Earth.svg": "/softswiss/static/media/Earth.83d68f94de9d84f4e1bc5dc89d3c3ffc.svg",
+    "main.css": "/softswiss/static/css/main.acf0aa5b.css",
+    "main.js": "/softswiss/static/js/main.3d79c44f.js",
     "static/media/space5.png": "/softswiss/static/media/space5.9cbc06caca625720dd94.png",
     "static/media/space4.png": "/softswiss/static/media/space4.b39d67d1e62a2f9cf9b9.png",
     "static/media/space1.jpg": "/softswiss/static/media/space1.680ad61e4be0df2600d4.jpg",
     "static/media/space2.png": "/softswiss/static/media/space2.0ad14a77c836ba976382.png",
-    "static/media/Rocket.svg": "/softswiss/static/media/Rocket.a4389852c90b9d43571cac86eea0e8ab.svg",
     "static/media/space3.png": "/softswiss/static/media/space3.2ba8fcce919a853779d2.png",
+    "static/media/EARTH.png": "/softswiss/static/media/EARTH.aec90fc9733a31645ea0.png",
     "static/media/Label.svg": "/softswiss/static/media/Label.6280a3954ecb02c0bf67dc9125f93945.svg",
     "static/media/Planet.svg": "/softswiss/static/media/Planet.0381c7e4a5fadc2c710e05053713bb30.svg",
-    "static/media/Basket.svg": "/softswiss/static/media/Basket.b697889a2021dbe00a30dd5ff69f0034.svg",
+    "static/media/BasketHover.svg": "/softswiss/static/media/BasketHover.130703b7b0cf9871648ffbe073cd6187.svg",
+    "static/media/Basket.svg": "/softswiss/static/media/Basket.23dc953ff0e750108951945b97f1159f.svg",
     "static/media/MenuClosed.svg": "/softswiss/static/media/MenuClosed.7e65dcdbfcb4fb7f60ea90f61a0ab5f8.svg",
     "static/media/MenuOpened.svg": "/softswiss/static/media/MenuOpened.60d4f41347544050a7b9d2915be4e499.svg",
     "index.html": "/softswiss/index.html",
-    "main.5dc20d17.css.map": "/softswiss/static/css/main.5dc20d17.css.map",
-    "main.22aed009.js.map": "/softswiss/static/js/main.22aed009.js.map"
+    "main.acf0aa5b.css.map": "/softswiss/static/css/main.acf0aa5b.css.map",
+    "main.3d79c44f.js.map": "/softswiss/static/js/main.3d79c44f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dc20d17.css",
-    "static/js/main.22aed009.js"
+    "static/css/main.acf0aa5b.css",
+    "static/js/main.3d79c44f.js"
   ]
 }
