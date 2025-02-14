@@ -1,0 +1,60 @@
+@import "variables";
+@import "mixins";
+
+.Menu {
+  display: flex;
+  gap: 54px;
+  cursor: pointer;
+
+  @include responsive(mobile) {
+    display: none;
+  }
+
+  &__basket-wrapper {
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__basket-wrapper:hover &__basket {
+    &_normal {
+      opacity: 0;
+    }
+    &_hover {
+      opacity: 1;
+    }
+  }
+
+  &__basket {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &_normal {
+      opacity: 1;
+    }
+    &_hover {
+      opacity: 0;
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+    display: none;
+    @include responsive(mobile) {
+      display: block;
+    }
+  }
+  
+  &__list {
+    display: flex;
+    position: absolute;
+    background: $gradient-bg;
+    top: 60px;
+    right: 0;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
