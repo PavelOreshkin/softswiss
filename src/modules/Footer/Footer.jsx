@@ -1,10 +1,10 @@
-import "../styles/Footer.scss";
-import rocket2 from "../icons/Rocket.png";
+import "./Footer.scss";
+import rocket from "../../assets/icons/Rocket.png";
 
 export default function Footer() {
   return (
     <div className="Footer">
-      <img src={rocket2} alt="rocket" />
+      <img src={rocket} alt="rocket" />
       <p className="Footer__text">Exciting space adventure!</p>
     </div>
   );

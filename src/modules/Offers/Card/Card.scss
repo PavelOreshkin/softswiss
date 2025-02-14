@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .Card {
   height: 350px;
@@ -17,7 +17,6 @@
   }
 
   @include responsive(tablet) {
-    // flex-basis: 48%;
     min-width: 40%;
     justify-content: flex-end;
   }
@@ -25,11 +24,6 @@
   @include responsive(mobile) {
     width: 100%;
   }
-
-  // @include responsive(tablet) {
-  //   justify-content: flex-end;
-  //   border: 1px solid red;
-  // }
 
   &_big {
     width: 100%;

@@ -1,7 +1,7 @@
-import "../styles/Header.scss";
-import label from "../icons/Label.svg";
-import planet from "../icons/Planet.svg";
-import Menu from "./Menu";
+import "./Header.scss";
+import label from "../../assets/icons/Label.svg";
+import planet from "../../assets/icons/Planet.svg";
+import Menu from "modules/Header/Menu/Menu";
 
 export default function Header() {
   return (

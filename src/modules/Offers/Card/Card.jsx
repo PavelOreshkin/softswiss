@@ -1,5 +1,5 @@
-import "../styles/Card.scss";
-import Button from "../shared/Button/Button";
+import "./Card.scss";
+import Button from "components/Button/Button";
 
 export default function Card({ title, subtitle, isBig, backgroundImg }) {
   const cardBig = isBig ? "Card_big" : "";

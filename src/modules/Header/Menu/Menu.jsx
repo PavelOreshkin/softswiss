@@ -1,10 +1,10 @@
-import "../styles/Menu.scss";
-import basket from "../icons/Basket.svg";
-import basketHover from "../icons/BasketHover.svg";
-import menuClosed from "../icons/MenuClosed.svg";
-import menuOpened from "../icons/MenuOpened.svg";
-import Button from "../shared/Button/Button";
 import { useState } from "react";
+import "./Menu.scss";
+import basket from "../../../assets/icons/Basket.svg";
+import basketHover from "../../../assets/icons/BasketHover.svg";
+import menuClosed from "../../../assets/icons/MenuClosed.svg";
+import menuOpened from "../../../assets/icons/MenuOpened.svg";
+import Button from "components/Button/Button";
 
 export default function Menu() {
   const [openedBurger, setOpenedBurger] = useState(false);

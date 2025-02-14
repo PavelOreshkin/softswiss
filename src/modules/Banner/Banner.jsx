@@ -1,6 +1,6 @@
-import "../styles/Banner.scss";
-import Button from "../shared/Button/Button";
-import earth2 from "../images/EARTH.png";
+import "./Banner.scss";
+import Button from "components/Button/Button";
+import earth from "../../assets/images/EARTH.png";
 
 export default function Banner() {
   return (
@@ -17,9 +17,7 @@ export default function Banner() {
           </p>
           <Button type="filled">Learn more</Button>
         </div>
-
-        {/* <img className="Banner__image" src={earth} alt="earth" /> */}
-        <img className="Banner__image" src={earth2} alt="earth" />
+        <img className="Banner__image" src={earth} alt="earth" />
       </div>
     </div>
   );

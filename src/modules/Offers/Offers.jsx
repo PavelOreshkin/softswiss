@@ -1,10 +1,9 @@
-import "../styles/Offers.scss";
-import Card from "./Card";
-
-import space2 from "../images/space2.png";
-import space3 from "../images/space3.png";
-import space4 from "../images/space4.png";
-import space5 from "../images/space5.png";
+import "./Offers.scss";
+import Card from "modules/Offers/Card/Card";
+import space2 from "../../assets/images/space2.png";
+import space3 from "../../assets/images/space3.png";
+import space4 from "../../assets/images/space4.png";
+import space5 from "../../assets/images/space5.png";
 
 export default function Offers() {
   return (
