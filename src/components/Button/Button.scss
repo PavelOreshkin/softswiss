@@ -17,7 +17,7 @@
   font-size: 16px;
 }
 
-.button {
+.Button {
   color: $default-color;
   border: none;
   background: none;
@@ -27,7 +27,7 @@
 
   &_default {
     &:hover {
-      background: linear-gradient(98.25deg, #EBFF00 18.56%, #FF70D9 76.02%);
+      background: linear-gradient(98.25deg, $primary-color 18.56%, $secondary-color 76.02%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
     }

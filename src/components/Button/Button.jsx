@@ -6,8 +6,8 @@ export default function Button({
   className,
   children,
 }) {
-  const baseClass = "button";
-  const typeClass = type ? `button_${type}` : "";
+  const baseClass = "Button";
+  const typeClass = type ? `Button_${type}` : "";
 
   return (
     <button
