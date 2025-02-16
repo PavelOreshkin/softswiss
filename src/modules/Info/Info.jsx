@@ -2,9 +2,9 @@ import "./Info.scss";
 
 export default function Info() {
   return (
-    <div className="Info">
+    <section className="Info">
       <div className="Info__wrapper">
-        <h3 className="Info__title">Embark on a space journey</h3>
+        <h2 className="Info__title">Embark on a space journey</h2>
         <p className="Info__description">
           Travelling into space is one of the most exciting and unforgettable
           adventures that can change your life forever. And if you have ever
@@ -46,6 +46,6 @@ export default function Info() {
           options for space excursions.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

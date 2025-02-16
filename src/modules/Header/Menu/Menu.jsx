@@ -12,22 +12,28 @@ export default function Menu() {
 
   return (
     <>
-      <div className={openedBurger ? "Menu Menu__list" : "Menu"}>
-        <Button>Home</Button>
-        <Button>Products</Button>
-        <div className="Menu__basket-wrapper">
-          <img
-            src={basket}
-            alt="basket"
-            className="Menu__basket Menu__basket_normal"
-          />
-          <img
-            src={basketHover}
-            alt="basket"
-            className="Menu__basket Menu__basket_hover"
-          />
-        </div>
-      </div>
+      <menu className={openedBurger ? "Menu Menu__list" : "Menu"}>
+        <li>
+          <Button>Home</Button>
+        </li>
+        <li>
+          <Button>Products</Button>
+        </li>
+        <li>
+          <div className="Menu__basket-wrapper">
+            <img
+              src={basket}
+              alt="basket"
+              className="Menu__basket Menu__basket_normal"
+            />
+            <img
+              src={basketHover}
+              alt="basket"
+              className="Menu__basket Menu__basket_hover"
+            />
+          </div>
+        </li>
+      </menu>
       <img
         src={openedBurger ? menuOpened : menuClosed}
         alt="menu"

@@ -7,9 +7,9 @@ import space5 from "../../assets/images/space5.png";
 
 export default function Offers() {
   return (
-    <div className="Offers">
+    <section className="Offers">
       <div className="Offers__wrapper">
-        <div className="Offers__title">Offers</div>
+        <h2 className="Offers__title">Offers</h2>
         <div className="Offers__cards">
           <Card
             title="Move the borders of reality!"
@@ -35,6 +35,6 @@ export default function Offers() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

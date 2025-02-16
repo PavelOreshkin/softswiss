@@ -8,17 +8,17 @@ export default function Card({ title, subtitle, isBig, backgroundImg }) {
   const subtitleBig = isBig ? "Card__subtitle_big" : "";
 
   return (
-    <div
+    <article
       className={`Card ${cardBig}`}
       style={{
         backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%), url(${backgroundImg})`,
       }}
     >
       <div className={`Card__content ${contentBig}`}>
-        <h2 className={`Card__title ${titleBig}`}>{title}</h2>
+        <h3 className={`Card__title ${titleBig}`}>{title}</h3>
         <p className={`Card__subtitle ${subtitleBig}`}>{subtitle}</p>
         <Button type="outlined">Learn more</Button>
       </div>
-    </div>
+    </article>
   );
 }
